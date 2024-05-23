@@ -3,36 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mountain Selection</title>
-<style>
-    /* Basic styling for demonstration */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    #container {
-        text-align: center;
-        padding: 50px;
-    }
-</style>
-<script src="./scripts/mointainsObso.js"></script>
+<title>National Parks Search</title>
 </head>
 <body>
-
-<div id="container">
-    <h2>Select a Mountain:</h2>
-    <select id="mountainSelect">
-        <option value="" disabled selected>Select a mountain</option>
-        <!-- JavaScript will populate options here -->
-    </select>
-    <div id="mountainInfo">
-        <!-- JavaScript will populate mountain information here -->
+    <input type="radio" name="searchType" value="state" id="stateRadio" checked>
+    <label for="stateRadio">Search by State/Territory</label>
+    <input type="radio" name="searchType" value="type" id="typeRadio">
+    <label for="typeRadio">Search by Park Type</label>
+    
+    <div id="stateSearch">
+        <label for="stateSelect">Select a State/Territory:</label>
+        <select id="stateSelect">
+            <option value="">-- Select State/Territory --</option>
+            <!-- Options will be added dynamically using JavaScript -->
+        </select>
+        <button onclick="searchParksByState()">Search</button>
+        <div id="stateResults"></div>
     </div>
-</div>
+    
+    <div id="typeSearch" style="display: none;">
+        <label for="parkTypeSelect">Select Park Type:</label>
+        <select id="parkTypeSelect">
+            <option value="">-- Select Park Type --</option>
+            <!-- Options will be added dynamically using JavaScript -->
+        </select>
+        <button onclick="searchParksByType()">Search</button>
+        <div id="typeResults"></div>
+    </div>
 
-<script src="./scripts/mountainsObso.js">
-</script>
-
+    <script src="./scripts/nationalParkData.js"></script>
+    <script src="./scripts/parkTypeData.js"></script>
+    <script src="./scripts/parkType.js"></script>
+    <!-- <script src="./scripts/nationalPark.js"></script> -->
 </body>
 </html>

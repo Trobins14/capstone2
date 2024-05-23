@@ -16,7 +16,7 @@ select.addEventListener('change', () => {
             <p>Elevation: ${selectedMountain.elevation} feet</p>
             <p>Effort: ${selectedMountain.effort}</p>
             <p>Description: ${selectedMountain.desc}</p>
-            <img src="${selectedMountain.img}" alt="${selectedMountain.name}" width="200">
+            <img src="../images/${selectedMountain.img}" alt="${selectedMountain.name}" width="200">
         `;
         infoDiv.innerHTML = mountainHTML;
     } else {
