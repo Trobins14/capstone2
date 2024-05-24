@@ -30,7 +30,6 @@
     </header>
 
     <div id="container">
-        <!-- <img src="./images/nonRequiredPhotos/alex-shutin-kKvQJ6rK6S4-unsplash.jpg"> -->
         <input type="radio" name="searchType" value="state" id="stateRadio" checked>
         <label for="stateRadio">Search by State/Territory</label>
         <input type="radio" name="searchType" value="type" id="typeRadio">
@@ -40,7 +39,7 @@
             <label for="stateSelect">Select a State/Territory:</label>
             <select id="stateSelect">
                 <option value="">-- Select State/Territory --</option>
-                <!-- Options will be added dynamically using JavaScript -->
+                <!-- Options will be added dynamically -->
             </select>
             <button onclick="searchParksByState()">Search</button>
             <div id="stateResults"></div>
@@ -50,19 +49,16 @@
             <label for="parkTypeSelect">Select Park Type:</label>
             <select id="parkTypeSelect">
                 <option value="">-- Select Park Type --</option>
-                <!-- Options will be added dynamically using JavaScript -->
+                <!-- Options will be added dynamically -->
             </select>
             <button onclick="searchParksByType()">Search</button>
             <div id="typeResults"></div>
         </div>
     </div>
     
-    <!-- <img src="images/nonRequiredPhotos/alex-shutin-kKvQJ6rK6S4-unsplash.jpg" class="bottom-image"> -->
     <script src="./scripts/nationalParkData.js"></script>
     <script src="./scripts/parkTypeData.js"></script>
     <script src="./scripts/parkType.js"></script>
-    <script src="./scripts/nationalPark.js"></script>
-    <!-- <script src="./scripts/mountains.js"></script> -->
 </body>
 
 </html>
