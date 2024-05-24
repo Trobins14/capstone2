@@ -4,8 +4,8 @@ const stateResultsDiv = document.getElementById('stateResults');
 const parkTypeSelect = document.getElementById('parkTypeSelect');
 const typeResultsDiv = document.getElementById('typeResults');
 
-// Populate dropdown with unique states/territories
-const states = nationalParksArray.reduce((acc, park) => {
+    // Will populate the dropdown
+    const states = nationalParksArray.reduce((acc, park) => {
     if (!acc.includes(park.State)) {
         acc.push(park.State);
     }
@@ -86,3 +86,4 @@ document.querySelectorAll('input[name="searchType"]').forEach(radio => {
         }
     });
 });
+

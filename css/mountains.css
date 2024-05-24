@@ -28,14 +28,15 @@
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc69;
+    background-color: #ffffff91;
     border-radius: 5px;
     margin-bottom: 20px;
   }
   
   #mountainInfo {
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff91;
     border: 1px solid #ddd;
     border-radius: 10px;
     margin-bottom: 20px;
