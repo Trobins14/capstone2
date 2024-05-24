@@ -1,0 +1,65 @@
+* {
+    scroll-behavior: smooth;
+    }
+    body {
+        background-image: url(../images/nonRequiredPhotos/alex-shutin-kKvQJ6rK6S4-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-color: #135393;
+    } 
+  #container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f760;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #container h2 {
+    margin-top: 0;
+  }
+  
+  #mountainSelect {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #mountainInfo {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 768px) {
+    #container {
+      padding: 10px;
+    }
+    #mountainSelect {
+      font-size: 14px;
+    }
+    #mountainInfo {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #container {
+      padding: 5px;
+    }
+    #mountainSelect {
+      font-size: 12px;
+    }
+    #mountainInfo {
+      padding: 5px;
+    }
+  }

@@ -1,7 +1,7 @@
 const stateSelect = document.getElementById('stateSelect');
     const resultsDiv = document.getElementById('results');
 
-    // Populate dropdown with unique states/territories
+    // Will populate the dropdown
     const states = nationalParksArray.reduce((acc, park) => {
         if (!acc.includes(park.State)) {
             acc.push(park.State);

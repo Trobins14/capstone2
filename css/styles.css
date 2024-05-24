@@ -17,11 +17,12 @@
     left: 0;
     width: 100%;
     z-index: -1;
-}
+} 
 
 .content {
+    text-align: center;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
+    background-color: rgba(255, 255, 255, 0.315); /* Translucent white background */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
 
