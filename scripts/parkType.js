@@ -12,6 +12,7 @@ const typeResultsDiv = document.getElementById('typeResults');
     return acc;
 }, []);
 
+    //goes through the array and creates option elements with state data
 states.sort().forEach(state => {
     const option = document.createElement('option');
     option.value = state;
@@ -27,6 +28,7 @@ parkTypesArray.sort().forEach(type => {
     parkTypeSelect.appendChild(option);
 });
 
+//Filters state array and displays it
 function searchParksByState() {
     const selectedState = stateSelect.value;
     const filteredParks = nationalParksArray.filter(park => park.State === selectedState);
@@ -51,6 +53,7 @@ function searchParksByState() {
     }
 }
 
+//Filters park type array and displays it
 function searchParksByType() {
     const selectedType = parkTypeSelect.value;
     const filteredParks = nationalParksArray.filter(park => park.LocationName.includes(selectedType));
@@ -75,6 +78,7 @@ function searchParksByType() {
     }
 }
 
+//radio toggle for switching between parkType search and state/territory search
 document.querySelectorAll('input[name="searchType"]').forEach(radio => {
     radio.addEventListener('change', () => {
         if (radio.value === 'state') {
