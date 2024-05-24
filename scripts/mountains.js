@@ -1,13 +1,15 @@
 const select = document.getElementById('mountainSelect');
 const infoDiv = document.getElementById('mountainInfo');
 
+//loops through the array and creates elements for each mountain
 mountainsArray.forEach(mountain => {
     const option = document.createElement('option');
-    option.value = mountain.name;
+    option.value = mountain.name; 
     option.textContent = mountain.name;
     select.appendChild(option);
 });
 
+//populates the card with the mountain information
 select.addEventListener('change', () => {
     const selectedMountain = mountainsArray.find(mountain => mountain.name === select.value);
     if (selectedMountain) {
